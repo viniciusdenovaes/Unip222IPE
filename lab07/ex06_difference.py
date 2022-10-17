@@ -1,10 +1,6 @@
 
 def diferenca(l1, l2):
-    resultado = set()
-    for e in l1:
-        if e not in l2:
-            resultado.add(e)
-    return resultado
+    return set(l1).difference(set(l2))
 
 
 assert diferenca([], []) == set()

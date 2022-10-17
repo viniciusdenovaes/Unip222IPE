@@ -1,10 +1,6 @@
 
 def intersecao(l1, l2):
-    resultado = set()
-    for e in l1:
-        if e in l2:
-            resultado.add(e)
-    return resultado
+    return set(l1).intersection(set(l2))
 
 
 assert intersecao([], []) == set()

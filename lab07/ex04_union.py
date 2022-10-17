@@ -1,11 +1,6 @@
 
 def uniao(l1, l2):
-    resultado = set()
-    for e in l1:
-        resultado.add(e)
-    for e in l2:
-        resultado.add(e)
-    return resultado
+    return set(l1).union(set(l2))
 
 
 assert uniao([], []) == set()
